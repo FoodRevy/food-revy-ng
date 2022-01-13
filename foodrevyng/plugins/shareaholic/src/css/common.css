@@ -1,0 +1,65 @@
+.btn-warning {
+  color: #fff !important;
+}
+
+.button-primary {
+  color: #fff !important;
+}
+
+.shareaholic-settings-h2 {
+  padding: 0 !important;
+}
+
+/* Header */
+#shr-header {
+  position: initial !important;
+  z-index: auto !important;
+  margin-left: -20px !important;
+  width: auto !important;
+}
+
+#shr-header .shr-header-content {
+  max-width: 100% !important;
+  margin: 0 0 0 20px !important;
+}
+
+.shr-mobile {
+  z-index: 2147483647 !important;
+}
+
+#shr-header .shr-nav-2 .shr-user-menu {
+  z-index: 2147483647 !important;
+}
+
+#shr-header .shr-sites-container {
+  z-index: 2147483647 !important;
+}
+
+#shr-header .shr-nav-2 .shr-signup-login {
+  margin-right: 2em !important;
+}
+
+#shr-header .shr-nav-2 .shr-profile {
+  margin-right: 15px !important;
+}
+
+/* End Header */
+
+/* Hides WP Nag Screen */
+#update-nag,
+.update-nag {
+  display: none !important;
+}
+
+/*** Hides notice pollution from other plugins ***/
+.notice {
+  display: none !important;
+}
+.error {
+  display: none !important;
+}
+/* ensure Shareaholic notices show */
+.notice.notice-info.is-dismissible.shareaholic-review-notice {
+  display: block !important;
+}
+/*** Hides notice pollution ***/

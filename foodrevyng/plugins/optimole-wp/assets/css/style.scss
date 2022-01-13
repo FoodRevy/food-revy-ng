@@ -1,0 +1,219 @@
+
+#optimole-app {
+  padding: 0 30px 0 20px;
+
+  $primary: #EF686B;
+  $success: #34a85e;
+  $danger: #D54222;
+  $info: #5180C1;
+
+  @import "~bulma/bulma";
+
+  .select:not(.is-multiple):not(.is-loading)::after{
+    display: none;
+  }
+  .card {
+    transition: all 750ms ease-in-out;
+    border: 0;
+    border-radius: .1875rem;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(39, 39, 39, .1);
+    box-shadow: 0 1px 15px 1px rgba(39, 39, 39, .1);
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    img {
+      max-width: 180px;
+      margin: 0 auto;
+    }
+  }
+  .vue-js-switch {
+    align-self: center;
+  }
+  .api-key-control {
+    padding: 0;
+  }
+  .is-vertical-center {
+    display: flex;
+    align-items: center;
+  }
+  .api-key-field .button.is-danger {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .api-key-label {
+    align-self: center;
+    margin: 0.5em 10px 0.5em 0;
+    font-size: 1em;
+  }
+  .header {
+    padding: 0 1.5rem 0;
+    &.level {
+      margin-bottom: 0;
+    }
+  }
+  .account {
+    img {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .label {
+      margin-bottom: 0;
+    }
+  }
+
+  //Optimized images.
+  .optimized-images {
+
+    table td, table th {
+      vertical-align: middle;
+    }
+  }
+  .media-diff {
+    position: relative;
+    margin: 0 auto;
+    video, img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .origin-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transform: translateZ(0);
+    will-change: width;
+  }
+
+  .handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.80);;
+    width: 2px;
+    cursor: ew-resize;
+    transform: translateX(-50%) translateZ(0);
+    z-index: 2;
+    will-change: left;
+    left: 200px;
+  }
+
+  .cursor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0);
+    .circle {
+      background-color: rgba(255, 255, 255, 0.80);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+  .no-padding-right{
+    padding-right:0px !important;
+  }
+  #filters-list .list {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  #filters-list .list-item {
+    border: none;
+  }
+
+  #filters-list .exclusion-filter .tag.is-link strong {
+    white-space: initial;
+  }
+
+  #filters-list .exclusion-filter .tag.is-link i {
+    margin-right: 5px;
+  }
+
+  #filters-list .exclusion-filter .tag.is-link {
+    text-decoration: none;
+    width: 80%;
+    height: auto;
+    min-height: 2em;
+    justify-content: left;
+  }
+}
+
+//Fade animation.
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}
+
+.media_page_optimole #wpbody-content > * {
+  display: none !important;
+}
+
+.media_page_optimole #wpbody-content > #optimole-app {
+  display: block !important;
+}
+
+#optimole-app img.optml-image {
+  float: left;
+  max-width: 100px;
+  width: auto;
+  margin: auto;
+}
+#optimole-app img.optml-image-watermark {
+  width:50px;
+}
+
+.optml-ratio-feedback .emoji {
+  font-size: 1.5em;
+}
+
+
+.optml-ratio-feedback {
+  float: right;
+  padding-right: 20px;
+}
+.optml-image-heading {
+  text-align: left;
+}
+
+th.optml-image-ratio-heading {
+  text-align: right !important;
+  font-size: 150%;
+}
+@media screen and (max-width: 768px) {
+  li:not(.is-active) > a > span:not(.icon):not(.ab-icon) {
+    visibility: hidden;
+    position:  absolute;
+  }
+
+  nav.tabs li:not(.is-active) {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+  .tabs .icon {
+    margin-left: 0.5em;
+  }
+}
+
+.tabs li {
+  transition: flex-grow 1s ease;
+}

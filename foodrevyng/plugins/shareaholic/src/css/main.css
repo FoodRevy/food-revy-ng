@@ -1,0 +1,659 @@
+body {
+  background: #f1f1f1 !important;
+  font-family: sans-serif;
+  font-size: 12px !important;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.app a,
+.text-muted a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.container-fluid {
+  padding: 0px;
+  clear: both;
+}
+
+.canvas {
+  display: block;
+}
+
+h3 {
+  clear: both;
+}
+
+.clear {
+  clear: both !important;
+  height: auto !important;
+}
+
+#app_settings {
+  padding-top: 0px;
+}
+
+fieldset {
+  border: 1px solid #d8d8d8;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+}
+
+fieldset#facebook-app.failed {
+  border: 1px solid #f44336;
+}
+
+.app {
+  width: 100%;
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  background-color: #fdfdfd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wide-button {
+  min-width: 200px;
+}
+
+.button-wrapper {
+  clear: both;
+  padding-top: 5px;
+}
+
+.app h2 {
+  font-size: 18px;
+  padding: 10px 10px 10px 20px;
+  margin: -10px -10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.app-content {
+  padding: 15px 0 5px 10px;
+}
+
+.app label {
+  font-size: 12px;
+  display: inline;
+  line-height: 1.6em;
+}
+
+legend {
+  border: none;
+  width: auto;
+  font-weight: bold;
+  padding: 0px 10px;
+  color: #007bb6;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.location {
+  clear: both;
+  padding-top: 5px;
+}
+
+.location_item_cta {
+  margin-left: 25px;
+}
+
+.check {
+  position: relative;
+}
+
+.shr-form-item {
+  padding-bottom: 4px !important;
+}
+
+.shr-form-item > * {
+  display: inline-block !important;
+  max-width: 90%;
+  vertical-align: top;
+}
+
+.shr-form-text ~ .shr-form-text {
+  margin-top: 0.5rem;
+}
+
+.shr-form-text label {
+  margin-bottom: 0;
+}
+
+.regular-text {
+  margin: 1px;
+  padding: 3px 5px;
+}
+
+.label {
+  margin-right: 20px;
+}
+
+#iframe_container,
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-loading-img {
+  background-image: url(../img/ajax_loader_green_128.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#shortcode_container,
+#shortcode {
+  cursor: inherit;
+  width: 100%;
+  text-align: center;
+  background: white;
+  height: 30px;
+}
+
+#shortcode_container {
+  border-top: 3px solid #ccc;
+}
+
+#shortcode {
+  font-family: monospace;
+}
+
+.reveal-modal {
+  width: 720px;
+  height: 80%;
+  margin-left: -335px;
+  position: fixed;
+  /* display: none; */
+}
+
+.reveal-modal.has-shortcode iframe,
+.reveal-modal.has-shortcode #iframe_container {
+  height: 100%;
+}
+
+.fieldset-footer {
+  clear: both;
+  overflow: hidden;
+}
+
+.fieldset-footer button {
+  float: left;
+}
+
+.fieldset-footer .app-status {
+  float: left;
+}
+
+#editing_modal {
+  padding: 0;
+}
+
+ul {
+  margin: 0px;
+}
+
+.green {
+  color: #11967a;
+}
+
+.red {
+  color: #f44336;
+}
+
+.grey {
+  color: #666666;
+}
+
+/**
+ * Spacing classes
+ * Should be used to modify the default spacing between objects (not between nodes of the same object)
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions!
+ * <type><location><size>
+ */
+/* ====== Default spacing ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+dl,
+p,
+blockquote,
+.media {
+  margin: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+  padding-bottom: 0px;
+}
+pre {
+  margin: 10px;
+}
+table h1,
+table h2,
+table h3,
+table h4,
+table h5,
+table h6,
+table p,
+table ul,
+table ol,
+table dl {
+  padding: 0;
+}
+
+.blocking-modal {
+  font-family: 'Open Sans', sans-serif;
+  top: 150px;
+  background: white;
+  width: 680px;
+  overflow: hidden;
+  text-align: center;
+  color: #414042;
+  font-size: 14px;
+  line-height: 1.6em;
+  box-shadow: 0px 0px 52px rgba(0, 0, 0, 0.32);
+  padding: 0;
+  height: 495px;
+}
+
+.api-key-modal,
+.welcome-modal {
+  height: auto;
+}
+
+h4 {
+  background: #00aa63;
+  color: #e6e6e6;
+  font-size: 22px;
+  line-height: 1.8em;
+  height: auto;
+  font-weight: 400;
+  margin: 0;
+}
+
+.blocking-modal a {
+  color: #3f7792;
+  text-decoration: none;
+}
+
+.blocking-modal a:hover {
+  color: #0988be;
+}
+
+.blocking-modal h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.blocking-modal p {
+  margin: 10px;
+  font-size: 12px;
+  line-height: 1.6em;
+  padding: 0px 10px 0px 10px;
+}
+
+.blocking-modal img {
+  width: 100px;
+  height: 100px;
+}
+
+.blocking-modal .btn_main {
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  background: #ff9800;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 80px;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -3px #14947b;
+  box-shadow: inset 0 -3px #14947b;
+}
+
+.blocking-modal .btn_main_busy {
+  background-image: linear-gradient(
+    -45deg,
+    #ff9800 28%,
+    #b76e03 28%,
+    #b76e03 72%,
+    #ff9800 72%
+  ) !important;
+  animation: shr-button__busy-animation 2000ms infinite linear;
+  background-size: 200px 100%;
+  transition: none;
+}
+
+@keyframes shr-button__busy-animation {
+  0% {
+    background-position: 400px 0;
+  }
+}
+
+.blocking-modal .btn_main:active {
+  top: 1px;
+  color: white;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.blocking-modal .btn_main:hover {
+  filter: brightness(1.1);
+  color: white;
+  border: none;
+}
+
+.blocking-modal .shr-people {
+  background-image: url(../img/happy-people-cover.png);
+  background-position: center;
+  min-height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.blocking-modal .small {
+  font-size: 12px;
+  color: #888888;
+}
+
+input[type='text'] {
+  width: 272px;
+}
+
+.settings_updated {
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  background-color: #45a147 !important;
+  border-color: #316632 !important;
+}
+
+.signuppromo {
+  padding: 20px 20px;
+  color: #45a147;
+  font-size: 14px;
+  float: right;
+  width: 250px;
+}
+
+.signuppromo_note {
+  font: 300 12px/20px 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+  color: #555;
+}
+
+.promoh1 {
+  font: 400 16px/22px 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.signuppromo ul {
+  margin: 24px 0px;
+}
+
+.signuppromo ul li {
+  background: url(../img/bolt.png) 0 2px no-repeat;
+  background-size: 18px 18px;
+  color: #555;
+  float: left;
+  font: 400 12px/18px 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+  list-style: none;
+  padding: 2px 0 2px 32px;
+  text-align: left;
+}
+
+.sidebar_links {
+  padding: 20px 20px;
+  color: #45a147;
+  font-size: 14px;
+}
+
+.sidebar_links ul {
+  margin: 0px 0px 0px 15px;
+  list-style-type: square;
+}
+
+.sidebar_links ul li {
+  color: #555;
+  font: 400 12px/18px 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+  margin: 0 0 4px 0;
+  text-align: left;
+}
+
+.key-status {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.key-description {
+  line-height: 1.6em;
+  margin-top: 10px;
+}
+
+.key-status.failed {
+  color: #f44336;
+}
+
+.key-status.passed {
+  color: #45a147;
+}
+
+.key-status.unknown {
+  color: #666666;
+}
+
+.blink {
+  -webkit-animation: blinker 1.5s alternate infinite ease-in-out;
+  animation: blinker 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+i.icon.icon-share_buttons {
+  background-position: 0 0px;
+  width: 16px;
+  height: 16px;
+}
+
+i.icon.icon-recommendations {
+  background-position: 0 -16px;
+  width: 16px;
+  height: 16px;
+}
+
+i.icon.icon-affiliate {
+  background-position: 0 -160px;
+  width: 16px;
+  height: 16px;
+}
+
+i.icon.icon-analytics {
+  background-position: 0 -32px;
+  width: 16px;
+  height: 16px;
+}
+
+i.icon.icon-website {
+  background-position: 0 -96px;
+  width: 16px;
+  height: 16px;
+}
+
+i.icon {
+  vertical-align: middle;
+  background-image: url(../img/shareaholic-icon-sprite@2x.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  background-size: 34px;
+  width: 16px;
+  height: 16px;
+}
+
+/* 
+  Value Section
+  *****************************************************************************
+*/
+
+.plugin-value-section-container {
+  margin: 25px auto;
+  width: 650px;
+}
+
+.plugin-value-section {
+  margin: 25px auto;
+  height: 170px;
+  width: 650px;
+  font: 400 14px/20px 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.plugin-value-section .plugin-value-line {
+  display: block;
+  height: 1px;
+  width: 75%;
+  max-width: 770px;
+  margin: 0 auto;
+  border-top: 4px dashed rgba(160, 163, 166, 0.35);
+  margin: 47px auto -44px;
+}
+
+.plugin-value-section .plugin-value {
+  padding-top: 0px;
+}
+
+.plugin-value-section .plugin-value li {
+  position: relative;
+  float: left;
+  width: 25%;
+  margin-right: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  text-align: center;
+}
+
+.plugin-value-section .plugin-value li:last-child {
+  border-right: none;
+}
+
+.plugin-value-section .plugin-value li p {
+  margin: 0;
+  padding: 1em 0.5em;
+  min-height: 110px;
+  color: rgb(136, 136, 136);
+}
+
+.plugin-value-section .plugin-value li a {
+  position: relative;
+  display: block;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.plugin-value-section .plugin-value li .icon {
+  display: block;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: white;
+  margin: 0 auto 12px;
+  font-size: 34px;
+}
+
+.plugin-value-section .plugin-value li .icon.fa-bullhorn {
+  background: #bbea76;
+}
+
+.plugin-value-section .plugin-value li .icon.fa-fire {
+  background: #77dd77;
+}
+
+.plugin-value-section .plugin-value li .icon.fa-bar-chart-o {
+  background: #5ed5a4;
+}
+
+.plugin-value-section .plugin-value li .icon.fa-usd {
+  background: #49c0c0;
+}
+
+.plugin-value-section .plugin-value li.acquire .title {
+  color: #aad56a;
+}
+
+.plugin-value-section .plugin-value li.engage .title {
+  color: #77dd77;
+}
+
+.plugin-value-section .plugin-value li.learn .title {
+  color: #5ed5a4;
+}
+
+.plugin-value-section .plugin-value li.monetize .title {
+  color: #49c0c0;
+}
+
+.plugin-value-section .plugin-value li a:hover {
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.plugin-value-section .plugin-value li .title {
+  text-transform: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #2c3440;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.plugin-value-section.in-viewport {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
