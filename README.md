@@ -1,6 +1,6 @@
-# food-revy-ng
+#food-revy-ng
 
-FoodRevy Blog site, developed using WordPress and hosted in Azure
+FoodRevy Blog site. Developed using WordPress packaged by Bitnami, in Azure cloud
 
 PROJECT IDEA
 
